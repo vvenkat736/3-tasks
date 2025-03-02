@@ -1,0 +1,87 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #1a1a1a;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Tubelight holder */
+.tube-holder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 50px;
+    background-color: #333;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+/* Tubelight */
+.tubelight {
+    width: 200px;
+    height: 20px;
+    background-color: #555;
+    border-radius: 10px;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+/* Light on effect */
+.on {
+    background-color: yellow;
+    box-shadow: 0 0 25px yellow;
+}
+
+/* Switch design */
+.switch-holder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.switch {
+    width: 40px;
+    height: 60px;
+    background-color: gray;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    position: relative;
+}
+
+.switch::before {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 25px;
+    background-color: white;
+    border-radius: 5px;
+    top: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: top 0.3s;
+}
+
+/* Switch ON state */
+.switch.on {
+    background-color: green;
+}
+
+.switch.on::before {
+    top: 30px;
+}
+
+/* Text below switch */
+#switch-status {
+    color: white;
+    font-size: 16px;
+}

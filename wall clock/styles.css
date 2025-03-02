@@ -1,0 +1,111 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+}
+
+.clock {
+    width: 350px;
+    height: 280px;
+    border: 15px solid purple;
+    border-radius: 50% / 45%;
+    position: relative;
+    background: white;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+}
+
+.center {
+    width: 10px;
+    height: 10px;
+    background: black;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hand {
+    position: absolute;
+    background: black;
+    transform-origin: bottom;
+    transform: translate(-50%, -100%) rotate(0deg);
+}
+
+.hour {
+    width: 6px;
+    height: 70px;
+    top: 50%;
+    left: 50%;
+}
+
+.minute {
+    width: 4px;
+    height: 90px;
+    top: 50%;
+    left: 50%;
+    background: black;
+}
+
+.second {
+    width: 2px;
+    height: 100px;
+    top: 50%;
+    left: 50%;
+    background: red;
+}
+
+.numbers {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.numbers span {
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+
+/* Custom colors for numbers */
+.n12 { color: red;    top: 5%;    left: 50%; }
+.n3  { color: blue;   top: 50%;   left: 93%; }
+.n6  { color: red;    top: 92%;   left: 50%; }
+.n9  { color: blue;   top: 50%;   left: 7%; }
+.n1  { color: lightblue;  top: 13%;  left: 78%; }
+.n2  { color: lightblue;  top: 28%;  left: 90%; }
+.n4  { color: lightblue;  top: 72%;  left: 90%; }
+.n5  { color: red;        top: 87%;  left: 78%; }
+.n7  { color: lightblue;  top: 87%;  left: 22%; }
+.n8  { color: lightgreen; top: 72%;  left: 10%; }
+.n10 { color: lightblue;  top: 28%;  left: 10%; }
+.n11 { color: lightblue;  top: 13%;  left: 22%; }
+
+/* Watermark styling */
+.watermark {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 18px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.2);
+    font-family: Arial, sans-serif;
+}
+
+/* Footer time display */
+.footer {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    font-family: Arial, sans-serif;

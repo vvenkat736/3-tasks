@@ -1,0 +1,111 @@
+/* Center the wardrobe */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: none; /* No background */
+}
+
+/* T-Shaped Wardrobe */
+.wardrobe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px; /* Space between upper and lower compartments */
+    perspective: 1200px; /* Enables 3D effect */
+}
+
+/* Upper Compartments */
+.upper-section {
+    display: flex;
+    gap: 5px;
+}
+
+/* Each Compartment in Upper Section */
+.compartment {
+    display: flex;
+    gap: 1px; /* Less space between doors */
+}
+
+/* Styling for Upper Doors */
+.upper-door {
+    width: 92px;
+    height: 100px;
+    background: linear-gradient(to right, #d2b48c, #c4a484); /* Sandalwood */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 2px solid black;
+    position: relative;
+    box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.5); /* 3D effect */
+}
+
+/* Lower Main Section */
+.lower-section {
+    display: flex;
+    gap: 0px; /* No space between main doors */
+}
+
+/* Main Doors */
+.main-door {
+    width: 138px;
+    height: 200px;
+    background: linear-gradient(to right, #d2b48c, #c4a484); /* Sandalwood */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 2px solid black;
+    position: relative;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.6); /* Stronger depth */
+}
+
+/* Open Right Door - Flipped Direction */
+.open-door {
+    transform: rotateY(10deg); /* Opens in the opposite direction */
+    box-shadow: -5px 5px 12px rgba(0, 0, 0, 0.6); /* Deeper shadow */
+}
+
+/* Door Handles - Now Closer to the Edge */
+.handle {
+    width: 5px;
+    height: 30px;
+    background-color: silver;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 3px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4); /* Shadow for 3D effect */
+}
+
+/* Left Door Handles - Near Black Line */
+.left-door .handle {
+    right: 8px; /* Move close to the black separation */
+}
+
+/* Right Door Handles - Near Black Line */
+.right-door .handle {
+    left: 8px; /* Move close to the black separation */
+}
+
+/* Adjust Upper Handles Position */
+.upper-door .handle {
+    top: 60%;
+}
+
+/* Hinges on Corners */
+.hinge {
+    width: 8px;
+    height: 4px;
+    background-color: black;
+    position: absolute;
+}
+
+/* Hinges for Left-Side Doors */
+.left-door .hinge-top { top: 5px; left: -3px; }
+.left-door .hinge-bottom { bottom: 5px; left: -3px; }
+
+/* Hinges for Right-Side Doors */
+.right-door .hinge-top { top: 5px; right: -3px; }
+.right-door .hinge-bottom { bottom: 5px; right: -3px; }

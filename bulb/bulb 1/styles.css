@@ -1,0 +1,17 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #1a1a1a;
+}
+
+.bulb {
+    font-size: 100px;
+    color: yellow;
+    transition: opacity 0.5s;
+}
+
+.hidden {
+    opacity: 0;
+}
