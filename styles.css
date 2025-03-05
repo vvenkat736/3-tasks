@@ -1,9 +1,0 @@
-body { display: flex; justify-content: center; align-items: center; height: 100vh; background: #1a1a1a; }
-.container { display: flex; flex-direction: column; align-items: center; gap: 20px; }
-.tube-holder { display: flex; justify-content: center; align-items: center; width: 250px; height: 50px; background: #333; border-radius: 10px; padding: 5px; }
-.tubelight { width: 200px; height: 20px; background: #555; border-radius: 10px; transition: background 0.3s, box-shadow 0.3s; }
-.tubelight.on { background: yellow; box-shadow: 0 0 25px yellow; }
-.switch-holder { display: flex; flex-direction: column; align-items: center; gap: 5px; }
-.switch { width: 40px; height: 60px; background: gray; border-radius: 10px; cursor: pointer; position: relative; }
-.switch.on { background: green; }
-#switch-status { color: white; font-size: 16px; }
