@@ -1,0 +1,13 @@
+body { background: url('image.png') no-repeat center center fixed; background-size: cover; font-family: Arial, sans-serif; text-align: center; color: white; }
+.game { background: rgba(0, 0, 0, 0.6); padding: 20px; border-radius: 10px; display: inline-block; margin-top: 30px; }
+button { background: white; color: black; padding: 10px; margin: 5px; border: none; cursor: pointer; }
+button:hover { background: lightgray; }
+#buttons button { font-size: 18px; }
+
+#hangman { position: relative; width: 100px; height: 150px; margin: 20px auto; }
+.stand { width: 60px; height: 10px; background: white; position: absolute; top: 10px; left: 20px; }
+.rope { width: 2px; height: 20px; background: white; position: absolute; top: 20px; left: 50px; display: none; }
+.head { width: 30px; height: 30px; border-radius: 50%; border: 2px solid white; position: absolute; top: 40px; left: 35px; display: none; }
+.body { width: 2px; height: 40px; background: white; position: absolute; top: 70px; left: 50px; display: none; }
+.arms { width: 40px; height: 2px; background: white; position: absolute; top: 85px; left: 30px; display: none; }
+.legs { width: 40px; height: 2px; background: white; position: absolute; top: 110px; left: 30px; display: none; }
